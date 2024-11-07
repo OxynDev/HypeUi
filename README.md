@@ -15,6 +15,9 @@ HypeUi is a Python library for creating native web GUIs with an emphasis on simp
 
 The main goal of HypeUi is to provide developers with a Python-based toolkit to create web GUIs that feel native, all while leveraging the power of modern front-end frameworks.
 
+
+![demo](https://github.com/OxynDev/HypeUi/blob/main/demo.png?raw=true)
+
 ## Installation
 
 ```bash
