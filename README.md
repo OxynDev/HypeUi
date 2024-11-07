@@ -6,4 +6,4 @@ NextUi components
 https://nextui.org/
 
 
-[![Vid]]((https://raw.githubusercontent.com/username/repository/branch/path/to/video.mp4))
+(https://raw.githubusercontent.com/username/repository/branch/path/to/video.mp4)
