@@ -29,6 +29,8 @@ pip install hypeui
 # Getting Started
 Here's an example code snippet to help you get started with HypeUi:
 
+[Example](https://github.com/OxynDev/HypeUi/blob/main/test.py)
+
 ```python
 from hypeUI.hypeUI.hypeui import *
 
