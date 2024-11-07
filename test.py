@@ -1,26 +1,34 @@
 
 from hypeUI.hypeUI.hypeui import *
 
-ui = Ui()
+ui = Ui(
+    dark_mode=True,
+    frameless=True,
+    width=1000,
+    height=600
+)
 
 with Root(ui) as root:
 
-    with Row() as switch_box:
+    # TEXT
+    with Box(style='rounded-lg p-5 m-2 bg-gradient-to-r from-cyan-500 to-blue-500 max-w-96') as text_box:
         
-        def on_switch(ele):
-            print(ele.set_style("hidden"))
+        switch1 = Text(label='HypeUI', style='text-black font-semibold')
+        text_box.add(switch1)
         
-        switch1 = Switch('Email verify', on_update=on_switch)
+    root.add(text_box)
+    
+    # SWITCH
+    with Box(style='rounded-lg p-5 m-2 bg-gradient-to-r from-cyan-500 to-blue-500 max-w-96') as switch_box:
         
+        def on_switch(ele: Switch):
+            print(ele)
+            
+        switch1 = Switch(on_update=on_switch)
         switch_box.add(switch1)
         
-        switch_box.add(Switch('Chat access'))
-        switch_box.add(Switch('Custom name'))
-        switch_box.add(Switch('Avatar changer'))
-        switch_box.add(Switch('Bio changer'))
-     
     root.add(switch_box)
-
-ui.run(root, get_imports())
+    
+ui.run(root)
 
 
