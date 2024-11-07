@@ -22,7 +22,7 @@ The main goal of HypeUi is to provide developers with a Python-based toolkit to 
 pip install hypeui
 ```
 
-(Note: The installation command above assumes HypeUi is published on PyPI. If not, please update the instructions to reflect the installation process.)
+(Soon)
 
 # Getting Started
 Here's an example code snippet to help you get started with HypeUi:
