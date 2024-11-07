@@ -27,30 +27,41 @@ pip install hypeui
 Here's an example code snippet to help you get started with HypeUi:
 
 ```python
+
 from hypeUI.hypeUI.hypeui import *
 
-# Initialize the UI
-ui = Ui()
+ui = Ui(
+    dark_mode=True,
+    frameless=True,
+    width=1000,
+    height=600
+)
 
-# Set up the root element
 with Root(ui) as root:
-    # Create a row container for switches
-    with Row() as switch_box:
+
+    # TEXT
+    with Box(style='rounded-lg p-5 m-2 bg-gradient-to-r from-cyan-500 to-blue-500 max-w-96') as text_box:
         
-        # Define the behavior of the switch
+        switch1 = Text(label='HypeUI', style='text-black font-semibold')
+        text_box.add(switch1)
+        
+    root.add(text_box)
+    
+    # SWITCH
+    with Box(style='rounded-lg p-5 m-2 bg-gradient-to-r from-cyan-500 to-blue-500 max-w-96') as switch_box:
+        
         def on_switch(ele: Switch):
-            print(ele.set_style("hidden"))
-        
-        # Add switches to the row
+            print(ele)
+            
         switch1 = Switch(on_update=on_switch)
         switch_box.add(switch1)
-        switch_box.add(Switch())
         
-    # Add the switch box to the root
     root.add(switch_box)
     
-# Run the UI
 ui.run(root)
+
+
+
 ```
 
 ## Components
