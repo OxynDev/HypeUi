@@ -10,7 +10,6 @@ HypeUi is a Python library for creating native web GUIs with an emphasis on simp
 
 - Easy-to-use syntax for creating web-based UIs with native Python code.
 - React and NextUI integration for enhanced, component-based design.
-- Real-time updates with `on_update` functions, allowing dynamic interaction handling.
 
 ## Goals
 
