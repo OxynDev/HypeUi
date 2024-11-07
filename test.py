@@ -28,11 +28,7 @@ with Root(ui) as root:
                 text = Text(label='HypeUI', style='text-black font-semibold')
                 code = Snippet(label="Text(label='HypeUI', style='text-black font-semibold')")
 
-                text_box.add(text)
-                text_box.add(code)
             
-            tab_1.add(text_box)
-
             # BUTTON
             with Box(style=box_css) as button_box:
 
@@ -42,10 +38,6 @@ with Root(ui) as root:
                 button = Button(label='HypeUI', on_press=on_press, style='font-semibold')
                 code = Snippet(label="Button(label='HypeUI', on_press=on_press, style='font-semibold')")
 
-                button_box.add(button)
-                button_box.add(code)
-            
-            tab_1.add(button_box)
             
             # SWITCH
             with Box(style=box_css) as switch_box:
@@ -56,21 +48,13 @@ with Root(ui) as root:
                 switch = Switch(label='Switch', on_update=on_switch, size='sm', color='success')
                 code = Snippet(label="Switch(label='Switch', on_update=on_switch, size='sm', color='success')")
                 
-                switch_box.add(switch) 
-                switch_box.add(code)
-            
-            tab_1.add(switch_box)
+
 
             # LINK
             with Box(style=box_css) as link_box:
 
                 link = Link(label='Github',href='https://github.com/OxynDev/HypeUi')
                 code = Snippet(label="Link(label='Github',href='https://github.com/OxynDev/HypeUi')")
-                
-                link_box.add(link) 
-                link_box.add(code)
-            
-            tab_1.add(link_box)
 
             # CARD
             with Box(style=box_css) as card_box:
@@ -78,17 +62,10 @@ with Root(ui) as root:
                 with Card() as card:
                     with CardBody() as cardbody:
                         text = Text(label='Card', style='font-semibold')
-                        cardbody.add(text)
-                    card.add(cardbody)
+
                     
                 code = Snippet(label="with Card() as card: with CardBody() as cardbody:")
                 
-                card_box.add(card)
-                card_box.add(code)
-                        
-            tab_1.add(card_box)
-            
-        tabs.add(tab_1)
 
         with Tab(key='github', title='github') as tab_2:
             
@@ -96,14 +73,7 @@ with Root(ui) as root:
                 
                 text = Text(label='https://github.com/OxynDev/HypeUi', style='text-black font-semibold')
 
-                text_box.add(text)
-            
-            tab_2.add(text_box)
 
-        tabs.add(tab_2)
-        
-    root.add(tabs)
-    
 ui.run(root)
 
 
