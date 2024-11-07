@@ -5,5 +5,5 @@ Python gui lib (webview, react, nextui)
 NextUi components
 https://nextui.org/
 
-<video src="https://raw.githubusercontent.com/username/repository/branch/path/to/video.mp4"></video>
+<video src="https://github.com/OxynDev/HypeUi/raw/refs/heads/main/2024-11-06_19-25-46.mp4)"></video>
 
