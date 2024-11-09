@@ -64,6 +64,9 @@ HypeUi currently includes the following components, with more to come as the lib
 - **Text**
 - **Card**
 - **CardBody**
+- **Input**
+- **Svg**
 
+  
 # Contributing
 If you're interested in contributing to this project or have ideas for improvement, feel free to reach out! You can contact me on Discord: oxyn.banned. I welcome feedback and collaboration.
